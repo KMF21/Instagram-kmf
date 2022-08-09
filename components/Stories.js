@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import contact from "../pages/contacts";
+import contact from "../components/contacts";
 import Story from "./Story";
 import { signIn, signOut, useSession } from "next-auth/react";
 
