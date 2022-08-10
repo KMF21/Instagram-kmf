@@ -77,7 +77,7 @@ function Header() {
 
               <PlusCircleIcon
                 onClick={() => setOpen(true)}
-                className=" h-5 md:inline-flex
+                className=" h-6 md:inline-flex
         cursor-pointer hover:scale-125
         transition-all duration-150 ease-out"
               />
@@ -92,7 +92,7 @@ function Header() {
             </>
           ) : (
             <button className="text-xs md:text-sm" onClick={signIn}>
-              Sign In
+              SignIn
             </button>
           )}
         </div>
