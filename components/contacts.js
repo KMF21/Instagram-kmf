@@ -72,6 +72,7 @@ const contacts = [
   },
   {
     id: 11,
+    name: "Caleb Nader",
     imgURL: faker.image.people(300, 300, true),
     phone: "+987 654 321",
     email: "jack@nowhere.com",

@@ -36,7 +36,7 @@ function Header() {
         </div>
         <div
           onClick={() => router.push("/")}
-          className="relative lg:hidden w-10  flex-shrink-0 cursor-pointer"
+          className="relative lg:hidden w-8  flex-shrink-0 cursor-pointer"
         >
           <Image
             src="https://links.papareact.com/jjm"
@@ -45,14 +45,14 @@ function Header() {
           />
         </div>
         {/* Middle - search field*/}
-        <div className="max-w-xs">
+        <div className="max-w-xs ">
           <div className="relative mt-1 p-3 rounded-md ">
             <div className="absolute inset-y-0 pl-3 flex items-center pointer-events-none">
-              <SearchIcon className="h-5 w-5 text-gray-500" />
+              <SearchIcon className="h-4 w-4 text-gray-500" />
             </div>
             <input
               className="bg-gray-50 block w-full pl-10 sm:text-sm
-           border-gray-300 focus:ring-black focus:border-black rounded-md "
+           border-gray-300 focus:ring-black focus:border-black rounded-md  "
               type="text"
               placeholder="Search"
             />
@@ -61,7 +61,7 @@ function Header() {
         {/* Right */}
         <div className="flex items-center justify-end space-x-4">
           <HomeIcon onClick={() => router.push("/")} className="navbtn" />
-          <MenuIcon className="h-6 md:hidden" />
+          <MenuIcon className="h-5 md:hidden" />
 
           {session ? (
             <>
@@ -85,7 +85,7 @@ function Header() {
                 onClick={signOut}
                 src={session.user.image}
                 alt="picture"
-                className="h-10 rounded-full cursor-pointer"
+                className="h-8 rounded-full cursor-pointer"
               />
             </>
           ) : (
